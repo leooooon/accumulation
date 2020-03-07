@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "search-hotel": "/pages/home/children/searchHotel",
+    "hotel-list": "/pages/home/children/hotelList"
+  }
+}

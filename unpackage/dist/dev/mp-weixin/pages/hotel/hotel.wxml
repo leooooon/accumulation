@@ -1,0 +1,1 @@
+<view class="content"><view class="serch-input"><view class="postion">长沙</view><view class="leave"><view><text>住</text><text class="ls">03-04</text></view><view><text>离</text><text class="ls">04-05</text></view></view><input type="text" placeholder="搜索地点/品牌/酒店名称"/></view><tab-control vue-id="1" bind:__l="__l"></tab-control></view>

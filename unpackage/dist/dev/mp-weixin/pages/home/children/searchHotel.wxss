@@ -1,0 +1,71 @@
+
+.content {
+	width: 710rpx;
+	height: 543rpx;
+	margin-top: 40rpx;
+	padding-top: 24rpx;
+	padding-left: 46rpx;
+	box-shadow: 0 0 20rpx 0 rgba(124, 124, 124, 0.2);
+	border-radius: 16rpx;
+}
+.search-hotel {
+	color: #303133;
+	font-size: 36rpx;
+	font-weight: bold;
+	margin-right: 6rpx;
+}
+.separate {
+	width: 4rpx;
+	height: 30px;
+	margin-right: 6rpx;
+}
+.explain {
+	color: #909399;
+	font-size: 30rpx;
+}
+.box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 110rpx;
+	width: 626rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-bottom: 1px solid #EAEAEA;
+}
+.search_icon {
+	width: 37rpx;
+	height: 37rpx;
+}
+.position_icon {
+	width: 73rpx;
+	height: 57rpx;
+	margin-right: 59rpx;
+}
+.item {
+	text-align: center;
+}
+.serch-box {
+	height: 89rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-bottom: none;
+}
+.serch-box input {
+	width: 100%;
+}
+.btn image {
+	width: 625rpx;
+	height: 135rpx;
+	margin-top: 10rpx;
+}
+
+

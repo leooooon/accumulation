@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "集时，酒店订房存时平台",
+  "usingComponents": {
+    "tab-control": "/pages/hotel/children/tabControll"
+  }
+}

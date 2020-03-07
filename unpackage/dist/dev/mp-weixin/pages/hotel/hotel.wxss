@@ -1,0 +1,32 @@
+
+.serch-input{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin-top: 20rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 58rpx;
+	border-radius:29rpx;
+	background-color: #F9F9F9;
+}
+.postion{
+	width: 140rpx;
+	text-align: center;
+	color: #2C99FF;
+}
+.leave{
+	color: #606266;
+	font-size: 18rpx;
+	padding-right: 40rpx;
+	border-right: 1px solid #EAEAEA;
+}
+.ls{
+	color: #2C99FF;
+	margin-left: 6rpx;
+}
+.serch-input input{
+	padding-left: 20rpx;
+}
+

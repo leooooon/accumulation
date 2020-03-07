@@ -1,0 +1,31 @@
+
+.tab-control {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 86rpx;
+}
+.item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.item image {
+	width: 32rpx;
+	margin-left: 15rpx;
+}
+.container{
+	width: 100%;
+	height: 600rpx;
+	background-color: pink;
+}
+

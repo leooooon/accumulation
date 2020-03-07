@@ -1,0 +1,35 @@
+
+.status_bar {
+	height: 25px;
+	width: 100%;
+}
+.logo {
+	width: 365rpx;
+	height: 60rpx;
+	margin-top: 21rpx;
+	margin-left: 34rpx;
+}
+.advertisement {
+	height: 170rpx;
+	margin: 23rpx auto;
+	border-radius: 16rpx;
+	background-color: #7CD0FE;
+}
+.recommend{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.love{
+	font-size: 36rpx;
+}
+.line {
+	width: 6rpx;
+	height: 36rpx;
+	margin-right: 27rpx;
+	background-color: #FFCF34;
+}
+
