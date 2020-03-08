@@ -1,57 +1,108 @@
 
-.content {
+.item {
+	padding-bottom: 3vw;
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
-.item {
+.product {
 	width: 344rpx;
-	margin: 20rpx 0;
+	height: 426rpx;
+	border-radius: 12rpx;
+	border: 1px solid #EAEAEA;
+	background-color: #fff;
+	margin-bottom: 25rpx;
 }
-.hotel-image {
+.product image {
 	width: 100%;
-	height: 205rpx;
+	height: 205.4rpx;
+	border-radius: 12rpx 12rpx 0 0;
+	vertical-align: middle;
 }
-.hotel-name,
-.score {
-	margin-right: 11rpx;
+.name,
+.grade {
+	width: 100%;
+	padding: 10rpx 12rpx;
+	padding-bottom: 0;
+	display: -webkit-box;
 }
-.bottom-box {
-	padding-left: 15rpx;
+.name text:nth-child(1) {
+	margin-right: 10rpx;
+	color: #0B203B;
+	font-size: 32rpx;
 }
-.score {
-	position: relative;
+.name text:nth-child(2),
+.grade text:nth-child(2) {
+	color: #909399;
+	font-size: 23rpx;
 }
-.w-line {
-	position: absolute;
-	bottom: 0rpx;
-	width: 52rpx;
-	height: 8rpx;
-	background-color: #FFDC2E;
+.grade {
+	padding: 0 12rpx;
 }
-.price {
-	font-size: 38rpx;
+.grade text {
+	display: inline-block;
+}
+.grade text:nth-child(1) {
+	margin-right: 10rpx;
+	color: #303133;
+	font-size: 32rpx;
+	font-family: PingFang SC;
+	font-weight: 800;
+	line-height: 23rpx;
+	border-bottom: 8rpx solid #FFDC2E;
+}
+.grade text:nth-child(2) {
+	font-size: 20rpx;
+}
+.info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	width: 100%;
+	padding: 0 12rpx;
+	padding-top: 20rpx;
+	line-height: 37rpx;
+}
+.info .price {
+	margin-right: 15rpx;
 	color: #FF4E3C;
+	font-size: 38rpx;
+	font-weight: 800;
 }
-.qi,
-.delel {
+.info .slogan {
 	color: #ccc;
 	font-size: 24rpx;
-	margin-right: 20rpx;
+	font-weight: 800;
 }
-.price-icon image {
+.price text:nth-of-type(1) {
+	font-size: 24rpx;
+}
+.price text:nth-of-type(2) {
+	color: #ccc;
+	font-size: 24rpx;
+}
+.banjia {
+	width: 100%;
+	margin-top: 10rpx;
+	padding: 0 12rpx;
+}
+.banjia image {
 	width: 116rpx;
 	height: 27rpx;
-}
-.price-icon {
-	margin-left: 4rpx;
-	margin-top: -10rpx;
-}
-.hotel-box {
-	line-height: 46rpx;
+	vertical-align: top;
 }
 
 /* popup */
@@ -78,13 +129,16 @@
 .center-box {
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
 	        flex-direction: column;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
 	        justify-content: center;
 	height: 204rpx;
 	padding: 0 50rpx;
@@ -93,9 +147,11 @@
 .center {
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
 .basefont {
@@ -108,25 +164,25 @@
 	font-size: 28rpx;
 	font-weight: bold;
 }
-.bottom-describe{
+.bottom-describe {
 	padding: 0 50rpx;
 	color: #606266;
 	font-size: 28rpx;
 	text-align: justify;
 }
-.hotel-btn{
+.hotel-btn {
 	width: 590rpx;
 	height: 100rpx;
 }
-.btn-box{
+.btn-box {
 	text-align: center;
 	margin-top: 50rpx;
 }
-.bottom-price{
-	padding-top:30rpx ;
+.bottom-price {
+	padding-top: 30rpx;
 	height: 96rpx;
 }
-.bottom-title{
+.bottom-title {
 	line-height: 60rpx;
 }
 

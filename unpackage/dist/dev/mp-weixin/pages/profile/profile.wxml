@@ -1,1 +1,1 @@
-<view></view>
+<view class="center"><h-mfilter-dropdown vue-id="1" filterData="{{filterData}}" defaultSelected="{{filterDropdownValue}}" data-event-opts="{{[['^confirm',[['confirm']]]]}}" bind:confirm="__e" bind:__l="__l"></h-mfilter-dropdown></view>

@@ -5,7 +5,8 @@
 	margin-top: 40rpx;
 	padding-top: 24rpx;
 	padding-left: 46rpx;
-	box-shadow: 0 0 20rpx 0 rgba(124, 124, 124, 0.2);
+	-webkit-box-shadow: 0 0 20rpx 0 rgba(124, 124, 124, 0.2);
+	        box-shadow: 0 0 20rpx 0 rgba(124, 124, 124, 0.2);
 	border-radius: 16rpx;
 }
 .search-hotel {
@@ -26,14 +27,17 @@
 .box {
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	height: 110rpx;
 	width: 626rpx;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
+	    -ms-flex-align: center;
 	        align-items: center;
 	border-bottom: 1px solid #EAEAEA;
 }
@@ -53,9 +57,11 @@
 	height: 89rpx;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
+	    -ms-flex-align: center;
 	        align-items: center;
 	border-bottom: none;
 }

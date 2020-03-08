@@ -44,7 +44,7 @@
 <style>
 	.serch-input{
 		display: flex;
-		margin-top: 20rpx;
+		margin: 20rpx;
 		align-items: center;
 		height: 58rpx;
 		border-radius:29rpx;

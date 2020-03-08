@@ -1,72 +1,37 @@
 <template>
 	<view class="content">
 		<view class="item">
-			<image src="../../../static/image/home/position_icon.png" class="hotel-image"></image>
-
-			<view class="bottom-box">
-				<view class="layout hotel-box">
-					<view class="one-title hotel-name">
-						佳兴世尊酒店
+			<view class="product" v-for="(goods) in goodsList" :key="goods.goods_id">
+				<image mode="widthFix" :src="goods.img"></image>
+				<view class="name">
+					<text>{{goods.name}}</text>
+					<text>{{goods.hotel}}</text>
+				</view>
+				<view class="grade">
+					<text>{{goods.grade}}</text>
+					<text>{{goods.distance}}</text>
+				</view>
+				<view class="info">
+					<view class="price" @tap="popup()">
+						<text>￥</text>
+						{{goods.price}}
+						<text>起</text>
 					</view>
-					<text class="secondary-text">五星级酒店</text>
-				</view>
-
-				<view class="layout hotel-box">
-					<view class="score">
-						<text class="one-title">4.8</text>
-						<view class="w-line">
-						</view>
+					<view class="slogan">
+						￥{{goods.slogan}}
 					</view>
-					<text class="secondary-text">距我0.5km·近金星中路</text>
 				</view>
-			</view>
-
-			<view class="price-box">
-				<view class="">
-					<text class="price" @tap="popup">￥142</text>
-					<text class="qi">起</text>
-					<text class="dele">284￥</text>
-				</view>
-				<view class="price-icon">
+				<view class="banjia">
 					<image src="../../../static/image/home/banjia.png" mode=""></image>
 				</view>
 			</view>
 		</view>
 
-		<view class="item">
-			<image src="../../../static/image/home/position_icon.png" class="hotel-image"></image>
 
-			<view class="bottom-box">
-				<view class="layout hotel-box">
-					<view class="one-title hotel-name">
-						佳兴世尊酒店
-					</view>
-					<text class="secondary-text">五星级酒店</text>
-				</view>
 
-				<view class="layout hotel-box">
-					<view class="score">
-						<text class="one-title">4.8</text>
-						<view class="w-line">
-						</view>
-					</view>
-					<text class="secondary-text">距我0.5km·近金星中路</text>
-				</view>
-			</view>
 
-			<view class="price-box">
-				<view class="">
-					<text class="price" @tap="popup">￥142</text>
-					<text class="qi">起</text>
-					<text class="delel">284￥</text>
-				</view>
-				<view class="price-icon">
-					<image src="../../../static/image/home/banjia.png" mode=""></image>
-				</view>
-			</view>
-		</view>
 
-		<uni-popup ref="popup" type="bottom" animation>
+		<!-- <uni-popup ref="popup" type="bottom" animation>
 			<view class="popup-content">
 				<view class="title-box">
 					<view class="title">
@@ -94,7 +59,7 @@
 						</text>
 					</view>
 				</view>
-				
+
 				<view class="bottom-describe">
 					<view class="special  bottom-price">
 						<text class="fr special">-￥142</text>
@@ -103,31 +68,92 @@
 						集时会员钜惠
 					</view>
 					<view class="bottom-xplain">
-						 划横线后的价格为集时会员专享半价房价格。时间账户储存时间≥24小时，即可在平台上任意酒店兑换半价入住（半价房不可享受时间储存服务）；
-						产品服务展示的划横线价格为产品服务的门市价、服务提供商的指导价、零售价、市场价或该产品服务在集时平台上曾经展示过的销售价等，并非原价；由于地区、时间的差异性和市场行情的波动，该价格可能会与您预订时展示的不一致，该价格仅供您参考。                         
+						划横线后的价格为集时会员专享半价房价格。时间账户储存时间≥24小时，即可在平台上任意酒店兑换半价入住（半价房不可享受时间储存服务）；
+						产品服务展示的划横线价格为产品服务的门市价、服务提供商的指导价、零售价、市场价或该产品服务在集时平台上曾经展示过的销售价等，并非原价；由于地区、时间的差异性和市场行情的波动，该价格可能会与您预订时展示的不一致，该价格仅供您参考。
 					</view>
 				</view>
-				 <view class="btn-box">
-				 	<image src="../../../static/image/home/chakanjiudian.png" mode="" class="hotel-btn"></image>
-				 </view>
-				
+				<view class="btn-box">
+					<image src="../../../static/image/home/chakanjiudian.png" mode="" class="hotel-btn"></image>
+				</view>
+
 
 
 			</view>
 
-		</uni-popup>
+		</uni-popup> -->
 	</view>
 </template>
 
 <script>
-	import uniPopup from "@/components/uni-popup/uni-popup.vue"
+	// import uniPopup from "@/components/uni-popup/uni-popup.vue"
 	export default {
 		components: {
-			uniPopup
+			// uniPopup
 		},
 		data() {
 			return {
-
+				//商品数据
+				goodsList: [{
+						goods_id: 1,
+						img: 'http://a3.att.hudong.com/07/06/01300309316150141448065118440.jpg',
+						name: '佳兴世尊酒店',
+						price: '142',
+						slogan: '142',
+						hotel: '五星级酒店',
+						distance: '距我0.5km·近金星中路',
+						grade: '4.8'
+					},
+					{
+						goods_id: 1,
+						img: 'http://a3.att.hudong.com/07/06/01300309316150141448065118440.jpg',
+						name: '佳兴世尊酒店',
+						price: '142',
+						slogan: '142',
+						hotel: '五星级酒店',
+						distance: '距我0.5km·近金星中路',
+						grade: '4.8'
+					},
+					{
+						goods_id: 1,
+						img: 'http://a3.att.hudong.com/07/06/01300309316150141448065118440.jpg',
+						name: '佳兴世尊酒店',
+						price: '142',
+						slogan: '142',
+						hotel: '五星级酒店',
+						distance: '距我0.5km·近金星中路',
+						grade: '4.8'
+					},
+					{
+						goods_id: 1,
+						img: 'http://a3.att.hudong.com/07/06/01300309316150141448065118440.jpg',
+						name: '佳兴世尊酒店',
+						price: '142',
+						slogan: '142',
+						hotel: '五星级酒店',
+						distance: '距我0.5km·近金星中路',
+						grade: '4.8'
+					},
+					{
+						goods_id: 1,
+						img: 'http://a3.att.hudong.com/07/06/01300309316150141448065118440.jpg',
+						name: '佳兴世尊酒店',
+						price: '142',
+						slogan: '142',
+						hotel: '五星级酒店',
+						distance: '距我0.5km·近金星中路',
+						grade: '4.8'
+					},
+					{
+						goods_id: 1,
+						img: 'http://a3.att.hudong.com/07/06/01300309316150141448065118440.jpg',
+						name: '佳兴世尊酒店',
+						price: '142',
+						slogan: '142',
+						hotel: '五星级酒店',
+						distance: '距我0.5km·近金星中路',
+						grade: '4.8'
+					},
+				],
 			};
 		},
 		methods: {
@@ -140,70 +166,117 @@
 </script>
 
 <style>
-	.content {
+	.item {
+		padding-bottom: 3vw;
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
-	.item {
+	.product {
 		width: 344rpx;
-		margin: 20rpx 0;
+		height: 426rpx;
+		border-radius: 12rpx;
+		border: 1px solid #EAEAEA;
+		background-color: #fff;
+		margin-bottom: 25rpx;
 	}
 
-	.hotel-image {
+	.product image {
 		width: 100%;
-		height: 205rpx;
+		height: 205.4rpx;
+		border-radius: 12rpx 12rpx 0 0;
+		vertical-align: middle;
 	}
 
-	.hotel-name,
-	.score {
-		margin-right: 11rpx;
+	.name,
+	.grade {
+		width: 100%;
+		padding: 10rpx 12rpx;
+		padding-bottom: 0;
+		display: -webkit-box;
 	}
 
-	.bottom-box {
-		padding-left: 15rpx;
+	.name text:nth-child(1) {
+		margin-right: 10rpx;
+		color: #0B203B;
+		font-size: 32rpx;
 	}
 
-	.score {
-		position: relative;
-
+	.name text:nth-child(2),
+	.grade text:nth-child(2) {
+		color: #909399;
+		font-size: 23rpx;
 	}
 
-	.w-line {
-		position: absolute;
-		bottom: 0rpx;
-		width: 52rpx;
-		height: 8rpx;
-		background-color: #FFDC2E;
+	.grade {
+		padding: 0 12rpx;
 	}
 
-	.price {
-		font-size: 38rpx;
+	.grade text {
+		display: inline-block;
+	}
+
+	.grade text:nth-child(1) {
+		margin-right: 10rpx;
+		color: #303133;
+		font-size: 32rpx;
+		font-family: PingFang SC;
+		font-weight: 800;
+		line-height: 23rpx;
+		border-bottom: 8rpx solid #FFDC2E;
+	}
+
+	.grade text:nth-child(2) {
+		font-size: 20rpx;
+	}
+
+	.info {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+		padding: 0 12rpx;
+		padding-top: 20rpx;
+		line-height: 37rpx;
+	}
+
+	.info .price {
+		margin-right: 15rpx;
 		color: #FF4E3C;
+		font-size: 38rpx;
+		font-weight: 800;
 	}
 
-	.qi,
-	.delel {
+	.info .slogan {
 		color: #ccc;
 		font-size: 24rpx;
-		margin-right: 20rpx;
+		font-weight: 800;
 	}
 
+	.price text:nth-of-type(1) {
+		font-size: 24rpx;
+	}
 
+	.price text:nth-of-type(2) {
+		color: #ccc;
+		font-size: 24rpx;
+	}
 
-	.price-icon image {
+	.banjia {
+		width: 100%;
+		margin-top: 10rpx;
+		padding: 0 12rpx;
+	}
+
+	.banjia image {
 		width: 116rpx;
 		height: 27rpx;
+		vertical-align: top;
 	}
 
-	.price-icon {
-		margin-left: 4rpx;
-		margin-top: -10rpx;
-	}
 
-	.hotel-box {
-		line-height: 46rpx;
-	}
+
+
 
 	/* popup */
 	.popup-content {
@@ -255,28 +328,33 @@
 		font-size: 28rpx;
 		font-weight: bold;
 	}
-	.bottom-describe{
+
+	.bottom-describe {
 		padding: 0 50rpx;
 		color: #606266;
 		font-size: 28rpx;
 		text-align: justify;
-		
+
 	}
-	.hotel-btn{
+
+	.hotel-btn {
 		width: 590rpx;
 		height: 100rpx;
-		
+
 	}
-	.btn-box{
+
+	.btn-box {
 		text-align: center;
 		margin-top: 50rpx;
-		
+
 	}
-	.bottom-price{
-		padding-top:30rpx ;
+
+	.bottom-price {
+		padding-top: 30rpx;
 		height: 96rpx;
 	}
-	.bottom-title{
+
+	.bottom-title {
 		line-height: 60rpx;
 	}
 </style>
